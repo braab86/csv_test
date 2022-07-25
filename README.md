@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This module downloads data from a series of csv files from an AWS S3 bucket. 
+This module downloads data from a series of csv files stored in an AWS S3 bucket. 
 It then loads the data into DataFrames, concatenates the DataFrames, pivots 
 the DataFrames, then exports as a csv
 
