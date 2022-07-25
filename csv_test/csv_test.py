@@ -11,4 +11,4 @@ try:
     df.to_csv('csv_test.csv')
     print('csv created')
 except:
-    print('csv failed to create')
+    print('csv not created')
