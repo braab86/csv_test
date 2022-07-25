@@ -7,4 +7,8 @@ ext = '.csv'
 
 df = get_pivot_df(get_csv_data(root_url, alphabet, ext))
 
-df.to_csv('csv_test.csv')
+try:
+    df.to_csv('csv_test.csv')
+    print('csv created')
+except:
+    print('csv failed to create')

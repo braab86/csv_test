@@ -19,6 +19,7 @@ def get_csv_data(root, url_list, ext):
 
 def get_pivot_df(pivot_df):
     pivot_df = pivot_df.pivot_table(values='length', index='user_id', columns='path', aggfunc='sum').fillna(0)
+    print('pivot created')
     return pivot_df
 
 
