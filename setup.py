@@ -4,7 +4,7 @@ setup(
     name='csv_test',
     version='1.0',
     packages=['csv_test'],
-    install_requres=['pandas'],
+    install_requires=['pandas'],
     url='',
     license='',
     author='Brian Raab',
