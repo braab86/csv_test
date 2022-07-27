@@ -23,7 +23,6 @@ def get_csv_data(root, url_list):
 Loops through csv files, creates DataFrames using get_df, then concatenates into one DataFrame
     :param root: string, root url
     :param url_list: string or list of strings with file name
-    :param ext: string, extension
     :return: concatenated DataFrame
     """
     csv_df = []
@@ -38,17 +37,17 @@ Loops through csv files, creates DataFrames using get_df, then concatenates into
     csv_df = pd.concat(csv_df)
     return csv_df
 
-def get_pivot_df(pivot_df, values, index, column, aggfunc):
+def get_pivot_df(pivot_df, values, index, column, agg_func):
     """
 Converts DataFrame into pivot table
     :param pivot_df: DataFrame
     :param values: column to be aggregated
     :param index: column to be indexed
     :param column: column to be pivoted
-    :param aggfunc: aggregate function to be performed on values
+    :param agg_func: aggregate function to be performed on values
     :return: DataFrame converted to pivot table
     """
-    pivot_df = pivot_df.pivot_table(values=values, index=index, columns=column, aggfunc=aggfunc).fillna(0)
+    pivot_df = pivot_df.pivot_table(values=values, index=index, columns=column, aggfunc=agg_func).fillna(0)
     print('pivot created')
     return pivot_df
 
