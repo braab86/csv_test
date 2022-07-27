@@ -11,8 +11,7 @@ the DataFrames, then exports as a csv
 * Python 3+
 * pandas
 
-## Executing Program
+## Notes
 
-Run program from Python console. The root url and the list of file names can be 
-modified in csv_test.py
+The root url and the list of file names can be modified in csv_test.py
 
